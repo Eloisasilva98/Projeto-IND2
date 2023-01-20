@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="/asserts/CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+       <div class = "menu">
+       <h1 id = "titulo">Decodificador</h1> 
+       <span>
+       <p> O objetivo desse projeto é criar uma aplicação capaz de codififar e descodificar mensagens utlizando tanto Cifra de Cesar quanto Base64.</p>
+       <p>A Cifra de César é um dos métodos conhecidos mais antigos de criptografia. É muito simples - é apenas substituição no alfabeto. A transformação
+         é denominada ROTN, onde N é o valor de substituição e ROT é de "ROTAÇÃO" pois trata-se de uma substituição cíclica.</p>
+       <p>Já a segunda,Base64, é um método de representação baseado em 64 caracteres imprimíveis para representar
+           dados binários.</p>
+           <p></p>
+       </span>
+        <nav>
+                <li id="btn1"> Base 64 </li>
+                <li id="btn2" > Cifra de Cesar </li>
+        </nav>
+    </div> 
+    </header>
+
+
+    <main>
+         <form id="formulario">
+        <div class="mensagem">
+            <input type="text" id="texto" name="msg" required="required" placeholder="Digite sua mensagem">
+        </div>
+
+        <div class="controle">
+            <div class="operacao">
+            <label for="Codificar">Codificar</label> <input type="radio" id="radio1" value="Codificar"/>
+	        <label for="Descodificar">Descodificar</label> <input type="radio" id="radio2" value="Decodificador"/>
+        </div>
+        </div>
+
+        <div>
+            <input type="text" name="msg" class="result" required="required" placeholder="">
+        </div>
+
+        <button>
+            <input class="button" type="submit" value="Enviar">
+        </button>
+        </form> 
+        
+        
+    </main>
+
+
+
+
+    <footer>
+        <div class="iconsite">
+                <a id="icon1" href = "eloisadossantossilva@gmail.com"><img id="img1" src="/asserts/img/icons/email.icon.png"></a>
+                <a id="icon2" href = "https://github.com/Eloisasilva98"><img id="img2" src="/asserts/img/icons/github.icon.png"></a>
+                <a id="icon2" href = "https://www.linkedin.com/in/eloisa-silva-dev/"><img id="img3" src="/asserts/img/icons/linkedin.icon.png"></a>     
+        </div> 
+    </footer>
+    <script type="text/javascript" src="/asserts/JS/script.js"></script>
+</body>
+</html>
