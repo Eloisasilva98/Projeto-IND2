@@ -21,48 +21,57 @@
            <p></p>
        </span>
         <nav>
-                <li id="btn1"> Base 64 </li>
-                <li id="btn2" > Cifra de Cesar </li>
+            <select id="selectButtons">
+             <option value="" selected disabled>Selecione uma opção:</option>
+             <option value="1">Base64</option>
+             <option value="2">Cifra de Cesar</option>
+
+            </select>
+             
         </nav>
     </div> 
-    </header>
+    </header> 
 
 
-    <main>
-         <form id="formulario">
+     <main> 
+         <form>
+            <!-- Espaço dedicado a entrada de texto -->
         <div class="mensagem">
-            <input type="text" id="texto" name="msg" required="required" placeholder="Digite sua mensagem">
+            <textarea type="text" id="mensagem" required="required" placeholder="Digite sua mensagem"></textarea>
         </div>
 
-        <div class="controle">
-            <div class="operacao">
-            <label for="Codificar">Codificar</label> <input type="radio" id="radio1" value="Codificar"/>
-	        <label for="Descodificar">Descodificar</label> <input type="radio" id="radio2" value="Decodificador"/>
-        </div>
-        </div>
-
-        <div>
-            <input type="text" name="msg" class="result" required="required" placeholder="">
+        <div class="radios">
+            <div class="container-radio">
+            <label for="Codificar">Codificar</label> <input name="entrada"  type="radio" id="radio1" value="Codificar"/>
+	        <label for="Decodificar">Decodificar</label> <input name="entrada"  type="radio" id="radio2" value="Decodificar"/>
         </div>
 
-        <button>
-            <input class="button" type="submit" value="Enviar">
-        </button>
+           <!-- incremento dedicado a Cifra de Cesar -->
+        <div class="range">
+        <input type="range" id="rangeCifra" min="0" max="25" value="0">
+        <label id="labelRange" for="rangeCifra" >0</label></div>
+        </div>
+             <!-- div dedicada a saida da mensagem já criptografada -->
+        <div class="resultado">
+            <textarea type="text" id="outPut" placeholder="Mensagem criptografia"></textarea>
+        </div>
+
+            <button class="button" id="button" name="button" type="submit">Enviar</button>
         </form> 
-        
-        
     </main>
 
 
 
 
     <footer>
+        <!-- Espaço no rodapé da pagina com link para minhas redes sociais -->
         <div class="iconsite">
                 <a id="icon1" href = "eloisadossantossilva@gmail.com"><img id="img1" src="/asserts/img/icons/email.icon.png"></a>
                 <a id="icon2" href = "https://github.com/Eloisasilva98"><img id="img2" src="/asserts/img/icons/github.icon.png"></a>
                 <a id="icon2" href = "https://www.linkedin.com/in/eloisa-silva-dev/"><img id="img3" src="/asserts/img/icons/linkedin.icon.png"></a>     
         </div> 
     </footer>
+    <!-- Link js -->
     <script type="text/javascript" src="/asserts/JS/script.js"></script>
 </body>
 </html>

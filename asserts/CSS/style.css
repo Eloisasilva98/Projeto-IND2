@@ -7,10 +7,10 @@
     outline: 0;
 }
 html, body{
-    
+
+    background-color: rgb(104, 139, 182);
     width: 100%;
     height: 100%;
-    background-color: rgb(156, 176, 199);
     font-family: 'Bree Serif', serif;
 }
 /* ======================Configuraçoes cabeçalho ==================== */
@@ -34,67 +34,38 @@ span{
     display: flex;
     margin: 10px 0px;
     color: white;
-    /* border: 2px solid white; */
     width: 100%;
     margin-left: 10px;
     text-align: center;
   
 }
-main{
+ main{
     width: 100%;
     height: 100%;
-}
+
+}  
 .menu{
-    border: 3px solid white;
-    height: 220px;
+    height: 100%;
     margin: 10px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;  
 }
+
 /* ===========Configuraçoes botoes ====================== */
  nav{
-    /* border: 2px solid white; */
     display: flex;
-    width: 40%;
-    list-style: none;
-   justify-content: space-evenly;
+   justify-content: center;
    margin-top: 20px;
 }
-#btn1{
-    border: 2px solid white;
-    color: white;
+#selectButtons{
     display: flex;
-    justify-content: center;
-    width: 126px; 
-    border-radius: 10px; 
-    text-shadow: 5px 5px 5px rgb(62, 87, 113);
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+    background-color: rgb(88, 88, 135);
 
-}
-#btn2{
-    border: 2px solid white;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 126px; 
-    border-radius: 10px; 
-    text-shadow: 5px 5px 5px rgb(93, 108, 123);
-} 
-#btn1, 
-#btn2:link{ 
-    text-decoration: none; 
-} 
-nav #btn1:hover{
-    display: flex;
-    background-color:rgb(197, 201, 206);
-    color: black;
-}
-nav #btn2:hover{
-    display: flex;
-    background-color:rgb(197, 201, 206);
-    color: black;
 }
 
 /* ========== Configuração Rodapé ============ */
@@ -132,21 +103,22 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 90px;
 
 }
-#formulario input#texto{
-    
+#outPut{
+    padding-left: 5px;
     display: flex;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     border-radius: 10px;
     background-color:  rgb(197, 201, 206);
 }
-#formulario input.result{
+#mensagem{
+    padding-left: 5px;
     display: flex;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     border-radius: 10px;
     background-color: rgb(197, 201, 206);
 
@@ -165,14 +137,21 @@ button, .button{
     color:white;
     background-color:rgb(19, 74, 136) ;
     display: flex;
-    width: 500px;
+    width: 300px;
     height: 30px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    margin-top: 20px;
 
 }
 .button:hover{
     background-color:rgb(197, 201, 206) ;
     color: rgb(19, 74, 136);
 }
+.range{
+ display: none;
+
+
+}
+
